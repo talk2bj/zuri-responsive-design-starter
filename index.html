@@ -6,16 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.icons').click(function(){
+                $('ul'.toggleClass('show'))
+            })
+        })
+    </script>
+
 </head>
 <body>
     <div class="nav-bar">
         <div class="logo">Snapshot</div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a class="active" href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <div class="icons">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
 
     <!-- Hero section -->
@@ -101,7 +114,7 @@
         <div class="footer-btn">
             <a href="#">Send Message</a>
         </div>
-        <h6>Copyright &copy; 2021 Zuri Training.</h6>
+        <h6>Copyright &copy; 2021 Omobolaji.</h6>
     </div>
 </body>
 </html>
