@@ -14,6 +14,10 @@ div.nav-bar {
     width: 100vw;
     background: #304353;
 }
+    ul.nav-links .active, a:hover {
+        border: 1px solid white;
+        transition: 1s;
+}
 
 div.logo {
     font-size: 1.5rem;
@@ -35,14 +39,76 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #88949B;
-    padding: 0.5vw;
+    padding: 0.8vw;
 }
+
+   .nav-bar .icons  {
+       color: white;
+       font-size: 30px;
+       line-height: 80px;
+      
+       float: right;
+       margin-left: 40px;
+       cursor: pointer;
+       
+   }
 
 ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
 }
+
+@media (max-width: 1048px){
+    div.logo{
+    font-size: 32px;
+    padding-left: 60px;
+}
+
+.nav-links ul {
+    margin-right: 20px;
+}
+
+.nav-links a {
+  font-size: 17px;
+}
+}
+
+@media (max-width: 909px){
+ .nav-link .icons {
+     display: block;
+ }
+
+ .nav-links ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: #2f3640;
+     top: 80px;
+     left: -100%;
+     transition: all 5s;
+     text-align: center;
+ }
+ .nav-links li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+
+ }
+.nav-links a{
+    font-size: 20px;
+}
+
+a .active a:hover{
+    border: none;
+    color: #3498db;
+}
+.nav-links .show{
+    left: 0;
+}
+
+}
+
 
 div.hero-section {
     background: #304353;
